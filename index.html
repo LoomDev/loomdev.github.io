@@ -12,7 +12,8 @@
     <meta name="description" content="Loom is a next-generation Minecraft server software with a modern and extensive plugin API. It aims to replace projects like Spigot and CraftBukkit.">
     <meta name="keywords" content="Minecraft, Spigot, server, plugins, api, open-source">
     <meta name="author" content="Loom Developers">
-    <meta name="og:image" content="https://loomdev.org/img/loom-background.png">    
+    <meta name="og:image" content="https://loomdev.org/img/loom-background.png">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
@@ -24,7 +25,7 @@
             align-items: center;
             flex-direction: column;
             background-color: #f6f6f6;
-            animation: fadeIn 3s;
+            animation: fadeIn 1s;
         }
 
         .content {
@@ -70,7 +71,7 @@
             font-weight: 600;
             color: white;
             text-decoration: none;
-            padding: 5px 15px;
+            padding: 5px 5px;
             border-radius: 5px;
             text-align: center;
             margin: 0 auto;
@@ -86,7 +87,7 @@
         }
 
         .github {
-            background-color: #353535;
+            background-color: #24292e;
         }
 
         .discord {
@@ -94,7 +95,7 @@
         }
 
         .footer {
-            background-color: #e3e3e3;
+            background-color: #f6f8fa;
             position: relative;
             display: block;
             margin: 0 auto;
@@ -102,7 +103,12 @@
             bottom: -5em;
             padding: 0.6em;
             height: 1.5em;
+            transition: 0.3s;
             border-radius: 0.3em;
+        }
+
+        .footer:hover {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
         }
 
         @keyframes fadeIn {
@@ -113,7 +119,6 @@
 
             100% {
                 opacity: 1;
-            }
         }
     </style>
 </head>
@@ -124,12 +129,12 @@
         <h1>Loom</h1>
         <h3>The next-generation Minecraft server software with a modern and extensive plugin API.</h3>
         <div class="links">
-            <a class="github link" href="https://github.com/loomdev">GitHub</a>
-            <a class="discord link" href="https://discord.gg/hCmwjPt">Discord</a>
+            <a class="github link" href="https://github.com/loomdev" style="font-size:24px"><i class="fa fa-github" ></i></a>
+            <a class="discord link" href="https://discord.gg/hCmwjPt" style="font-size:24px"><i class="fa fa-discord-alt" ></i></a>
             <!--<a class="discord link" href="https://loom-api.readthedocs.io/en/latest/">Wiki</a>-->
         </div>
         <div class="footer">
-            <h3>Test it out! Join <code>demo.loomdev.org</code></h1>
+            <h3 style="color:white">Test it out! Join <code><b>demo.loomdev.org</b></code></h1>
         </div>
     </div>
 </body>
