@@ -14,7 +14,6 @@
     <meta name="author" content="Loom Developers">
     <meta name="og:image" content="https://loomdev.org/img/loom-background.png">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-
     <style>
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 
@@ -39,6 +38,7 @@
             width: 160px;
             -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.3));
             filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.3));
+            transition: 0.35s;
         }
 
         h1 {
@@ -95,12 +95,12 @@
         }
 
         .footer {
-            background-color: #f6f8fa;
+            background-color: #EEC475;
             position: relative;
             display: block;
             margin: 0 auto;
             width: 20em;
-            bottom: -5em;
+            bottom: -2em;
             padding: 0.6em;
             height: 1.5em;
             transition: 0.3s;
@@ -108,7 +108,11 @@
         }
 
         .footer:hover {
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+        }   
+
+        .image:hover {
+            transform: scale(1.1) rotate(8deg);
         }
 
         @keyframes fadeIn {
@@ -119,6 +123,7 @@
 
             100% {
                 opacity: 1;
+        }
         }
     </style>
 </head>
@@ -134,7 +139,7 @@
             <!--<a class="discord link" href="https://loom-api.readthedocs.io/en/latest/">Wiki</a>-->
         </div>
         <div class="footer">
-            <h3 style="color:white">Test it out! Join <code><b>demo.loomdev.org</b></code></h1>
+            <h3 style="color:black">Test it out! Join <code><b>demo.loomdev.org</b></code></h1>
         </div>
     </div>
 </body>
